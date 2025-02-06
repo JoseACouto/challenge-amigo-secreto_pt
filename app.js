@@ -10,7 +10,9 @@ function adicionarAmigo() {
         alert('Por Favor, insira um nome!');
     } else {
         listaDeAmigos.push(nomeDoAmigo);
-        console.log(listaDeAmigos);} 
+        console.log(listaDeAmigos);
+        limparCampo();
+    } 
 }
 
 adicionarAmigo();
@@ -21,4 +23,9 @@ function atualizarListaDeAmigos() {
 
 function sortearAmigo() {
 
+}
+
+function limparCampo() {
+    nomeDoAmigo = document.querySelector('input');
+    nomeDoAmigo.value = ''
 }
