@@ -2,11 +2,15 @@
 
 let listaDeAmigos = [];
 
-function adicionarAmigo() {
 
-    let nomedoAmigo = document.querySelector('input').value.trim;
-    listaDeAmigos.push(nomedoAmigo);
-    console.log(listaDeAmigos);
+function adicionarAmigo() {
+    let nomeDoAmigo = document.querySelector('input').value;   
+
+    if (nomeDoAmigo == "") {
+        alert('Por Favor, insira um nome!');
+    } else {
+        listaDeAmigos.push(nomeDoAmigo);
+        console.log(listaDeAmigos);} 
 }
 
 adicionarAmigo();
